@@ -1,0 +1,56 @@
+editor: source
+
+execute:
+  cache: false
+  freeze: auto
+
+project:
+  type: website
+  output-dir: docs
+  render: [index.qmd]
+
+title: "Central Limit Theorem (CLT)"
+author: "Daniel Vartanian"
+  # name: "Daniel Vartanian"
+  # orcid: 0000-0001-7782-759X
+  # url: https://linktr.ee/danielvartan
+  # email: danvartan@gmail.com
+  # corresponding: true
+  # affiliation:
+  #   - name: University of São Paulo
+  #   - Country: Brazil
+  #   - url: https://www.usp.br
+keyword: >
+  statistics. probability. sample size. central limit theorem.
+date: today
+date-format: "YYYY-MM-DD"
+
+website:
+  open-graph: true
+  repo-url: https://github.com/danielvartan/central-limit-theorem
+  site-url: https://danielvartan.github.io/central-limit-theorem/
+  issue-url: https://github.com/danielvartan/central-limit-theorem/issues/
+  repo-branch: main
+  repo-actions: [edit, issue]
+  search: false
+  navbar:
+    title: false
+    background: dark
+    left:
+      - icon: github
+        href: https://github.com/danielvartan/central-limit-theorem
+        aria-label: GitHub
+
+format:
+  html:
+    locale: en
+    language: en-us
+    code-fold: show
+    code-link: true
+    tbl-cap-location: top
+    callout-appearance: simple
+    csl: english-apa-author-date.csl
+    theme: [cosmo, scss/web-theme-light.scss]
+
+google-scholar: false
+bibliography: references.bib
